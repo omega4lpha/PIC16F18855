@@ -58,7 +58,7 @@ image::https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.av
 _Fuente: Microchip Technology_
 
 == 4. Ejemplos de Aplicación
-Los ejemplos a demostrar en este informe son obtenidos del libro [Carlos Ruiz Camarreño, 2021. "Programación de microcontroladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/] de Carlos Ruiz Zamarreño
+Los ejemplos a demostrar en este informe son obtenidos del libro footnote:[Carlos Ruiz Camarreño, 2021. "Programación de microcontroladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/] de Carlos Ruiz Zamarreño
 
 === 4.1. Control de un LED por pulsador
 Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontroladores) con el nombre *LED PULSADOR*, luego en la ventasna Project Resources se asigna los terminales RA0 y RA5 como salida y entrada digital respectivamente, tal como muestra la figura 4.
