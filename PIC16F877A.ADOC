@@ -11,6 +11,9 @@ El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Techno
 * *SSP* (Puerto serie síncrono) permite comunicación entre dispositvos con los siguientes protocolos:
 ** *SSI* (Serial Peripheral Interface) permiote la comunicación entre sensores, memorias y pantallas.
 ** *I2C™* (Inter-Integrated Circuit) permite la comunicación maestro-esclavo, como al querer conectar multiples dispositivos a un bus de datos.
+* *USART/SCI* (Receptor/Transmisor Asíncrono y Síncrono Universal) permite la comunicación serial de forma asincronica con otros dispositivos.
+* *PSP* (Puerto esclavo paralelo) permite la comunicaicón en paralelo de instrucciones lectura, escritura y selección de chip.
+* *BOR* (Brown-out reset) protege al dispositivo en caso de caídas de tensión.
 
 === Definiciones
 * RISC CPU: procesadores que están diseñados para ejecutar un número reducido de tipos de instrucciones que les permite operar a una velocidad más elevada (Solé, R. 2021) footnote:[Solé, R. (2021). "RISC: La arquitectura de procesadores usada por ARM para cambiar el mercado". https://www.profesionalreview.com/2021/07/17/que-es-risc/#Que_es_RISC].
