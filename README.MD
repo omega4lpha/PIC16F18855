@@ -74,14 +74,20 @@ Dentro de MPLAB se usará MCC (MPLAB ® Code Configurator), para poder asignar l
 
 ---
 
-## 3. Ejemplos de Aplicación
+## 4. Ejemplos de Aplicación
 
-Los ejemplos a demostrar en este informe son obtenidos del libro "Programación de microcontoladores PIC paso a paso"[^3] de Carlos Urioz Zamarreño
+Los ejemplos a demostrar en este informe son obtenidos del libro "Programación de microcontoladores PIC paso a paso"[^3] de Carlos Ruiz Zamarreño
 
-### 3.1. **Control de un LED por pulsador**
-E
+### 4.1. **Control de un LED por pulsador**
+Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontroladores) con el nombre *LED PULSADOR*, luego en la ventasna Project Resources se asigna los terminales RA0 y RA5 como salida y entrada digital respectivamente, tal como muestra la figura 3.
 
-### 3.2. **Sensor de Temperatura con Display LCD**
+**Figura 3: Asignación de terminales**
+
+![MPLAB](img/mplab-xpress-ide-transparent-background.avif)
+
+*Fuente: Microchip Technology*
+
+### 4.2. **Sensor de Temperatura con Display LCD**
 Ejemplo del LED
 
 ---
