@@ -16,13 +16,13 @@ A continuación, se describen las características básicas de acuerdo con Micro
 
 [cols="1,1", options="header"]
 |===
-| Característica                  | Valor
-| Program Memory Size (KB)       | 14
-| RAM                            | 1024
+| Característica                 | Valor
+| Tamaño de memoria de programa (KB)       | 14
+| RAM (byte)                     | 368
 | Data EEPROM (bytes)            | 256
-| Pin Count                      | 28
-| Operation Voltage Max. (V)     | 5.5
-| Operation Voltage Min. (V)     | 1.8
+| Canitdad pines                     | 40 o 44
+| Voltage Max. de operación (V)     | 5.5
+| Voltage Min. de operación (V)     | 2
 |===
 
 === 1.2. Diferencias entre un Microcontrolador y un Microprocesador
@@ -41,7 +41,7 @@ A diferencia de los microprocesadores, el PIC16F877A (el cual es un microcontrol
 Los microcontroladores como el PIC16F877A están optimizados para tareas específicas, mientras que los microprocesadores son más potentes pero requieren más componentes externos y recursos.
 
 == 2. Usos del PIC16F877A
-El PIC16F877A tiene usos en sistemas embebidos donde se requiere bajo consumo energético, una programación simplificada en C++ o ASEMBLY. Entre sus usos más comunes se encuentran:
+El PIC16F877A tiene usos en sistemas embebidos donde se requiere bajo consumo energético, una programación simplificada en C++ o assembly. Entre sus usos más comunes se encuentran:
 
 * Automatización industrial (control de motores, monitoreo de sensores)
 * Domótica (control de luces, cerraduras, temperatura)
@@ -91,6 +91,74 @@ int main(void)
         if(PULSADOR_GetValue()==0) LED0_Toggle();
     }    
 }
+----
+
+[source,assembly]
+----
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Copyright (c) 2013 Manolis Agkopian		    ;
+;See the file LICENCE for copying permission.	    ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	PROCESSOR '16F876A'
+	INCLUDE <P16F876A.INC>
+
+	__CONFIG _XT_OSC & _WDT_OFF & _PWRTE_OFF & _CP_OFF & _LVP_OFF & _BODEN_OFF
+
+DL_CNT EQU 0x20 ;DELAY COUNTER: COUNTS THE INTERUPS FROM TMR0
+
+	ORG 0x0000
+	GOTO INIT
+	ORG 0x0004
+	GOTO TMR_CNT
+	
+INIT:
+	BSF STATUS, RP0 ;SELECT BANK 01
+	MOVLW B'11000111' ; PSA = 1/256 (THE TIMER WILL COUNT ONCE EVERY 256 CYCLES)
+	MOVWF OPTION_REG ;AND USE INTERNAL INSTRUCTION CYCLE CLOCK
+	
+	BCF TRISB, 0 ;SET PB0 AS OUTPUT
+	BCF STATUS, RP0 ;SELECT BANK 00
+	
+	BCF PORTB, 0
+	
+	MOVLW B'11100000' ;ENABLE TIMER 0 INTERUPT
+	CLRF TMR0
+	MOVWF INTCON
+	
+	MOVLW 0x0F ;256 * 256 * 15 = ABOUT 1S
+	MOVWF DL_CNT ;SO WE SET THE DELAY COUNTER TO COUNT 15 INTERUPTS
+
+MAIN:
+	GOTO $ ;DO NOTHING, JUST WAIT FOR AN INTERUPT
+	
+TMR_CNT:
+	BCF INTCON, GIE ;DISABLE ALL INTERUPTS
+	BCF INTCON, TMR0IF ;CLEAR TMR0 OVERFLOW FLAG
+
+	DECFSZ DL_CNT ;WHEN THE DELAY COUNTER BECOMES ZERO
+	GOTO CONTINUE
+	
+	BTFSC PORTB, 0 ;THEN IF PB0 IS SET
+	GOTO CLR_PB0 ;CLEAR IT
+	
+	BSF PORTB, 0 ;ELSE IF IS CLEARED, THEN SET IT
+	GOTO CONTINUE_0
+	
+CLR_PB0:
+	BCF PORTB, 0
+
+CONTINUE_0:
+	MOVLW 0x0F ;RESET THE DELAY COUNTER
+	MOVWF DL_CNT
+	
+CONTINUE:
+	BSF INTCON, GIE ;RENABLE THE INTERUPTS
+	RETFIE
+	
+	END
+
 ----
 
 .Figure 7: Ajuste CLC
