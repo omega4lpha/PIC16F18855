@@ -46,7 +46,23 @@ Los microcontroladores como el PIC16F18855 están optimizados para tareas espec�
 
 ## 2. Usos del PIC16F18855
 
-Acá detallaré cuales son los usos de PIC
+El PIC16F18855 tiene usos en sistemas embebidos donde se requiere bajo consumo energético, una programación simplificada en C++ o ASEMBLY. Entre sus usos más comunes se encuentran:
+
+- Automatización industrial (control de motores, monitoreo de sensores).
+- Domótica (control de luces, cerraduras, temperatura).
+- Equipos médicos portátiles.
+- Electrónica de consumo (juguetes inteligentes, electrodomésticos).
+- Sistemas educativos para enseñanza de programación y electrónica básica.
+- Prototipos de IoT cuando se combinan con módulos de comunicación externa.
+
+Gracias a sus periféricos independientes del núcleo (CIP), puede ejecutar tareas simples sin requerir constantemente la intervención del procesador, optimizando así el consumo de energía.
+
+
+---
+
+## 3. Entorno de programación 
+
+Para poder programar al PIC16F18855 se utiliza el **IDE MLAB Xpress IDE**
 
 ---
 
@@ -62,7 +78,7 @@ Ejemplo del LED
 
 ## Conclusión
 
-Acá va la conclusión
+El microcontrolador PIC16F18855 representa una excelente opción para desarrolladores que buscan una solución eficiente, económica y versátil para sistemas embebidos. Su conjunto de periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Con capacidades como ADC de alta resolución, múltiples interfaces de comunicación y periféricos independientes del núcleo, el PIC16F18855 permite diseñar dispositivos confiables, compactos y eficientes sin requerir hardware externo complejo. Es un claro ejemplo de cómo la integración y simplicidad pueden potenciar la innovación en proyectos electrónicos modernos.
 
 ---
 
