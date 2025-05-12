@@ -99,7 +99,7 @@ En la figura 5 se muestra que se debe configurar el reloj interno en 1MHZ para p
 
 **Figura 5: Ajuste de reloj interno**
 
-![clock_control](img/cambio_nombre.png)
+![clock_control](img/clock_control.png)
 
 *Fuente: MPLAB Xpress*
 
