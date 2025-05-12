@@ -71,7 +71,7 @@ Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofr
 
 **Figura 3: Logo de MPLAB**
 
-![MPLAB](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.avif)
+![MPLAB](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.png)
 
 *Fuente: Microchip Technology*
 
