@@ -62,7 +62,7 @@ Gracias a sus periféricos independientes del núcleo (CIP), puede ejecutar tare
 
 ## 3. Entorno de programación 
 
-Para poder programar al PIC16F18855 se utiliza el **IDE MLAB Xpress IDE**
+Para poder programar al PIC16F18855 se utiliza el **IDE MLAB ® Xpress IDE** ofrecido por Microship Technology[^2]
 
 ---
 
@@ -85,3 +85,5 @@ El microcontrolador PIC16F18855 representa una excelente opción para desarrolla
 ## Referencias
 
 [^1]: Microchip Technology, s.f. "PIC16F18855". https://www.microchip.com/en-us/product/pic16f18855#Overview
+[^2]: Microchip Technology, s.f. "MPLAB® Xpress Cloud-Based IDE". https://www.microchip.com/en-us/tools-resources/develop/mplab-xpress
+
