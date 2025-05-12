@@ -70,7 +70,7 @@ Gracias a sus periféricos independientes del núcleo (CIP), puede ejecutar tare
 Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofrecido por Microship Technology[^2], siendo una herramienta que aporta flexibilidad, permitiendo programar, depurar y cargar el código al PIC16F877A.
 
 **Figura 3: Logo de MPLAB**
-
+![MPLAB](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.avif)
 ![MPLAB](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.png)
 
 *Fuente: Microchip Technology*
