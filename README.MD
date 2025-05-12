@@ -1,10 +1,10 @@
-# PIC16F18855
+# PIC16F877A
 
 ## 1. Historia
-El PIC16F18855 es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado en el 2010 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas gracias a funciones como Core Independent Peripherals (CIP), convertidores analógico-digitales (ADC) de alta resolución y comunicación serial avanzada (I2C, SPI, UART). Es compatible con el entorno de desarrollo MPLAB X y el compilador XC8, lo que facilita su programación y depuración en aplicaciones industriales y educativas.
+El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado en el 2010 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas gracias a funciones como Core Independent Peripherals (CIP), convertidores analógico-digitales (ADC) de alta resolución y comunicación serial avanzada (I2C, SPI, UART). Es compatible con el entorno de desarrollo MPLAB X y el compilador XC8, lo que facilita su programación y depuración en aplicaciones industriales y educativas.
 
 
-**Figura 1: Diagrama del microcontrolador PIC16F18855**
+**Figura 1: Diagrama del microcontrolador PIC16F877A**
 
 ![PIC16F18855](https://media.microchip.com/silicon-devices/medium/pic16f18855-m3x.png)
 
@@ -15,7 +15,7 @@ El PIC16F18855 es un microcontrolador de 8 bits desarrollado por Microchip Techn
 
 ### 1.1. Carácteristicas
 
-A continuación, de describen las características básicas de acuerdo con Microchip Technology[^1] del microcontrolador PIC16F18855
+A continuación, de describen las características básicas de acuerdo con Microchip Technology[^1] del microcontrolador PIC16F877A
 
 | Característica                  | Valor     |
 |-------------------------------|-----------|
@@ -29,10 +29,10 @@ A continuación, de describen las características básicas de acuerdo con Micro
 
 ### 1.2. Diferencias entre un Microcontrolador y un Microprocesador
 
-A diferencia de los microprocesadores, el PIC16F18855 (el cual es un microcontrolador ) no consta de un sistema operativo para su funcionamiento. En lugar de eso, está diseñado para ejecutar directamente código embebido escrito en lenguajes como C o ensamblador, sin necesidad de capas intermedias de software. Esto lo hace ideal para aplicaciones específicas donde se requiere una respuesta rápida, bajo consumo de energía y alta integración de periféricos en un solo dispositivo.
+A diferencia de los microprocesadores, el PIC16F877A (el cual es un microcontrolador ) no consta de un sistema operativo para su funcionamiento. En lugar de eso, está diseñado para ejecutar directamente código embebido escrito en lenguajes como C o ensamblador, sin necesidad de capas intermedias de software. Esto lo hace ideal para aplicaciones específicas donde se requiere una respuesta rápida, bajo consumo de energía y alta integración de periféricos en un solo dispositivo.
 Su capacidad de procesamiento es menor, pensado precisamente para tareas de menor complejidad, analizando sus entradas y salidas (I/O) en base a sus componentes internos y cambios de voltaje.
 
-| Característica               | Microcontrolador (ej: PIC16F18855)     | Microprocesador                        |
+| Característica               | Microcontrolador (ej: PIC16F877A)     | Microprocesador                        |
 |-----------------------------|----------------------------------------|----------------------------------------|
 | Integración                 | Incluye CPU, memoria, I/O y periféricos| Solo contiene la unidad central de proceso (CPU) |
 | Propósito                   | Aplicaciones embebidas específicas     | Computadoras generales o sistemas complejos |
@@ -40,13 +40,13 @@ Su capacidad de procesamiento es menor, pensado precisamente para tareas de meno
 | Costo                       | Bajo                                   | Alto                                   |
 | Consumo de energía          | Bajo                                   | Generalmente más alto                  |
 
-Los microcontroladores como el PIC16F18855 están optimizados para tareas específicas, mientras que los microprocesadores son más potentes pero requieren más componentes externos y recursos.
+Los microcontroladores como el PIC16F877A están optimizados para tareas específicas, mientras que los microprocesadores son más potentes pero requieren más componentes externos y recursos.
 
 ---
 
-## 2. Usos del PIC16F18855
+## 2. Usos del PIC16F877A
 
-El PIC16F18855 tiene usos en sistemas embebidos donde se requiere bajo consumo energético, una programación simplificada en C++ o ASEMBLY. Entre sus usos más comunes se encuentran:
+El PIC16F877A tiene usos en sistemas embebidos donde se requiere bajo consumo energético, una programación simplificada en C++ o ASEMBLY. Entre sus usos más comunes se encuentran:
 
 - Automatización industrial (control de motores, monitoreo de sensores).
 - Domótica (control de luces, cerraduras, temperatura).
@@ -62,7 +62,7 @@ Gracias a sus periféricos independientes del núcleo (CIP), puede ejecutar tare
 
 ## 3. Entorno de programación 
 
-Para poder programar al PIC16F18855 se utiliza el **IDE MPLAB ® Xpress IDE** ofrecido por Microship Technology[^2], siendo una herramienta que aporta flexibilidad, permitiendo programar, depurar y cargar el código al PIC16F18855.
+Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofrecido por Microship Technology[^2], siendo una herramienta que aporta flexibilidad, permitiendo programar, depurar y cargar el código al PIC16F877A.
 
 **Figura 2: Logo de MPLAB**
 
@@ -125,7 +125,7 @@ int main(void)
 ```
 
 De acuerdo con el autor, se podrían detectar errores de que se deba de pulsar más de una vez para cambiar el estado del LED y esto se debería a la velocidad de ejecución del programa, se propone como idea poner unos delays de 20ms entre cada pulzación, sin embargo, el autor indica que hay formas más eficientes de resolver esto, sin perder ciclos de ejcución en la espera. Para esta solución se usan los modulos integrados en el microcontrolado (timers 2, 4 y 6) que realizan la función de forma autónoma.
-Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F18855 propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 6.
+Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F877A propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 6.
 
 **Figura 6: Ajuste CLC**
 
@@ -140,8 +140,8 @@ En esta configuración, se conecta el evento TMR2=PRD a la salida biestable, con
 
 ## Conclusión
 
-El microcontrolador PIC16F18855 es una excelente opción para desarrolladores en busqueda de soluciones económicas y versátiles para sistemas embebidos. Sus periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Como fue visto en el ejmplo tomado de la literatura, existen distintas vías para la obtención de los mismos resultados, siendo algunos enfocados en la suma de compuertas lógicas y otros en la programación.
-La indagación de futuros proyectos usando el PIC16F18855 podría solucionar problemas sencillos que anteriormente se han resuelto con Arduinos (malgastando todo el poder de los microcontroladores que lo componen), siendo una respuesta más eficiente.
+El microcontrolador PIC16F877A es una excelente opción para desarrolladores en busqueda de soluciones económicas y versátiles para sistemas embebidos. Sus periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Como fue visto en el ejmplo tomado de la literatura, existen distintas vías para la obtención de los mismos resultados, siendo algunos enfocados en la suma de compuertas lógicas y otros en la programación.
+La indagación de futuros proyectos usando el PIC16F877A podría solucionar problemas sencillos que anteriormente se han resuelto con Arduinos (malgastando todo el poder de los microcontroladores que lo componen), siendo una respuesta más eficiente.
 
 ---
 
