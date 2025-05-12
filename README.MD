@@ -8,7 +8,7 @@ Acá va la historia breve del PIV
 
 ### 1.1 Carácteristicas
 
-A continuación, de describen las características básicas del microcontrolador PIC16F18855
+A continuación, de describen las características básicas de acuerdo con Microchip.com[^1] del microcontrolador PIC16F18855
 
 | Característica                  | Valor     |
 |-------------------------------|-----------|
@@ -56,3 +56,8 @@ Ejemplo del LED
 ## Conclusión
 
 Acá va la conclusión
+
+
+## Referencias
+
+[^1]: Microchip.com, s.f. "PIC16F18855". https://www.microchip.com/en-us/product/pic16f18855#Overview
