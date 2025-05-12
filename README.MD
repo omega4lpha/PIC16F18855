@@ -91,7 +91,7 @@ Luego se asignan nombres a cada uno de los terminales para poder ser referenciad
 
 **Figura 4: Cambio de nombre terminales**
 
-![MPLAB](img/cambio_nombre.png)
+![Cambio_nombre_terminales](img/cambio_nombre.png)
 
 *Fuente: MPLAB Xpress*
 
@@ -99,7 +99,7 @@ En la figura 5 se muestra que se debe configurar el reloj interno en 1MHZ para p
 
 **Figura 5: Ajuste de reloj interno**
 
-![MPLAB](img/clock_control.png)
+![clock_control](img/clock_control.png)
 
 *Fuente: MPLAB Xpress*
 
