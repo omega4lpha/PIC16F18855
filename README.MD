@@ -76,8 +76,10 @@ Dentro de MPLAB se usará MCC (MPLAB ® Code Configurator), para poder asignar l
 
 ## 3. Ejemplos de Aplicación
 
-### 3.1. **Control de un LED RGB**
-Ejemplo del led
+Los ejemplos a demostrar en este informe son obtenidos del libro "Programación de microcontoladores PIC paso a paso"[^3] de Carlos Urioz Zamarreño
+
+### 3.1. **Control de un LED por pulsador**
+E
 
 ### 3.2. **Sensor de Temperatura con Display LCD**
 Ejemplo del LED
@@ -94,4 +96,4 @@ El microcontrolador PIC16F18855 representa una excelente opción para desarrolla
 
 [^1]: Microchip Technology, s.f. "PIC16F18855". https://www.microchip.com/en-us/product/pic16f18855#Overview
 [^2]: Microchip Technology, s.f. "MPLAB® Xpress Cloud-Based IDE". https://www.microchip.com/en-us/tools-resources/develop/mplab-xpress
-
+[^2]: Carlos Ruiz Camarreño, 2021. "Programación de microcontoladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/
