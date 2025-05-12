@@ -105,7 +105,23 @@ En la figura 5 se muestra que se debe configurar el reloj interno en 1MHZ para p
 
 Finalizando con salir del MCC para ir al archivo main.c y programar la condición de cuando haya un cambio en el pulsador, que se active o desactive el LED.
 
-<pre> ```c #include "mcc_generated_files/system/system.h" /* Main application */ int main(void) { SYSTEM_Initialize(); while(1) { if(PULSADOR_GetValue() == 0) LED0_Toggle(); } } ``` </pre>
+```c
+#include "mcc_generated_files/system/system.h"
+
+/*
+    Main application
+*/
+
+int main(void)
+{
+    SYSTEM_Initialize();
+      while(1)
+    {
+        if(PULSADOR_GetValue()==0) LED0_Toggle();
+    }    
+}
+
+```
 
 
 ### 4.2. **Sensor de Temperatura con Display LCD**
