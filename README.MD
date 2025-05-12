@@ -1,7 +1,7 @@
 # PIC16F18855
 
 ## 1. Historia
-El PIC16F18855 es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado en la década de 2010 como parte de la familia PIC16. Destaca por su bajo consumo de energía y su capacidad para aplicaciones embebidas gracias a funciones como Core Independent Peripherals (CIP), convertidores analógico-digitales (ADC) de alta resolución y comunicación serial avanzada (I2C, SPI, UART). Es compatible con el entorno de desarrollo MPLAB X y el compilador XC8, lo que facilita su programación y depuración en aplicaciones industriales y educativas.
+El PIC16F18855 es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado en el 2010 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas gracias a funciones como Core Independent Peripherals (CIP), convertidores analógico-digitales (ADC) de alta resolución y comunicación serial avanzada (I2C, SPI, UART). Es compatible con el entorno de desarrollo MPLAB X y el compilador XC8, lo que facilita su programación y depuración en aplicaciones industriales y educativas.
 
 
 **Figura 1: Diagrama del microcontrolador PIC16F18855**
