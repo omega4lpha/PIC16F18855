@@ -83,7 +83,7 @@ Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontro
 
 **Figura 3: Asignación de terminales**
 
-![MPLAB](img/mplab-xpress-ide-transparent-background.avif)
+![MPLAB](img/MCC_PINS.png)
 
 *Fuente: Microchip Technology*
 
