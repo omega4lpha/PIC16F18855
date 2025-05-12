@@ -8,9 +8,9 @@ El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Techno
 * Módulo *Capture*: Permite capturar el temporizador ante algún evento con una resolución de *12,5 ns*.
 * Módulo *Compare*: Permite comparar 2 valores de un máximo de 16 bits con una resolución de *200 ns*.
 * *PWM* (Modulación de Ancho de Pulso): Se encarga de enviar una señal de salida de ciclo variable, con una resolución de *máximo 10 bits*.
-* *SSP* (Puerto serie síncrono) con los siguientes protocolos:
-** *SSI* (Serial Peripheral Interface).
-** *I2C™* (Inter-Integrated Circuit).
+* *SSP* (Puerto serie síncrono) permite comunicación entre dispositvos con los siguientes protocolos:
+** *SSI* (Serial Peripheral Interface) permiote la comunicación entre sensores, memorias y pantallas.
+** *I2C™* (Inter-Integrated Circuit) permite la comunicación maestro-esclavo, como al querer conectar multiples dispositivos a un bus de datos.
 
 === Definiciones
 * RISC CPU: procesadores que están diseñados para ejecutar un número reducido de tipos de instrucciones que les permite operar a una velocidad más elevada (Solé, R. 2021) footnote:[Solé, R. (2021). "RISC: La arquitectura de procesadores usada por ARM para cambiar el mercado". https://www.profesionalreview.com/2021/07/17/que-es-risc/#Que_es_RISC].
