@@ -71,6 +71,7 @@ Para poder programar al PIC16F18855 se utiliza el **IDE MPLAB ® Xpress IDE** of
 *Fuente: Microchip Technology*
 
 Dentro de MPLAB se usará MCC (MPLAB ® Code Configurator), para poder asignar las entradas y salidas a cada pin correspondiente para los ejemplos a continuacion.
+Este entorno es gratuito y se trabaja en la nube, facilitando su uso en distintas plataformas.
 
 ---
 
@@ -139,7 +140,8 @@ En esta configuración, se conecta el evento TMR2=PRD a la salida biestable, con
 
 ## Conclusión
 
-El microcontrolador PIC16F18855 es una excelente opción para desarrolladores en busqueda de soluciones económicas y versátiles para sistemas embebidos. Sus periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Como fue visto en el ejmplo tomado de la literatura, existen distintas vías para la obtención de los mismos resultados.
+El microcontrolador PIC16F18855 es una excelente opción para desarrolladores en busqueda de soluciones económicas y versátiles para sistemas embebidos. Sus periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Como fue visto en el ejmplo tomado de la literatura, existen distintas vías para la obtención de los mismos resultados, siendo algunos enfocados en la suma de compuertas lógicas y otros en la programación.
+La indagación de futuros proyectos usando el PIC16F18855 podría solucionar problemas sencillos que anteriormente se han resuelto con Arduinos (malgastando todo el poder de los microcontroladores que lo componen), siendo una respuesta más eficiente.
 
 ---
 
