@@ -4,7 +4,7 @@
 El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado en el 2010 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas gracias a funciones como Core Independent Peripherals (CIP), convertidores analógico-digitales (ADC) de alta resolución y comunicación serial avanzada (I2C, SPI, UART). Es compatible con el entorno de desarrollo MPLAB X y el compilador XC8, lo que facilita su programación y depuración en aplicaciones industriales y educativas.
 
 === Definiciones
-* RISC CPU: procesadores que están diseñados para ejecutar un número reducido de tipos de instrucciones que les permite operar a una velocidad más elevada (Solé, R. 2021) footnote:[Solé, R, 2021. "RISC: La arquitectura de procesadores usada por ARM para cambiar el mercado". https://www.profesionalreview.com/2021/07/17/que-es-risc/#Que_es_RISC].
+* RISC CPU: procesadores que están diseñados para ejecutar un número reducido de tipos de instrucciones que les permite operar a una velocidad más elevada (Solé, R. 2021) footnote:[Solé, R. (2021). "RISC: La arquitectura de procesadores usada por ARM para cambiar el mercado". https://www.profesionalreview.com/2021/07/17/que-es-risc/#Que_es_RISC].
 
 .Figure 1: Diagrama del microcontrolador 44 pins PIC16F877A
 image::https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/44pin.jpg[alt="PIC16F877A 44 Pinout", width=400]
@@ -15,7 +15,7 @@ image::https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/40pin.jp
 _Fuente: Microchip Technology_
 
 === 1.1. Características
-A continuación, se describen las características básicas de acuerdo con Microchip Technology footnote:[Microchip Technology, s.f. "PIC16F18855". https://www.microchip.com/en-us/product/pic16f18855#Overview] del microcontrolador PIC16F877A
+A continuación, se describen las características básicas de acuerdo con Microchip Technology footnote:[Microchip Technology. (s.f.). "PIC16F18855". https://www.microchip.com/en-us/product/pic16f18855#Overview] del microcontrolador PIC16F877A
 
 [cols="1,1", options="header"]
 |===
@@ -54,14 +54,14 @@ El PIC16F877A tiene usos en sistemas embebidos donde se requiere bajo consumo en
 * Prototipos de IoT cuando se combinan con módulos de comunicación externa
 
 == 3. Entorno de programación
-Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofrecido por Microship Technology footnote:[Microchip Technology, s.f. "MPLAB® Xpress Cloud-Based IDE". https://www.microchip.com/en-us/tools-resources/develop/mplab-xpress]  , siendo una herramienta que aporta flexibilidad, permitiendo programar, depurar y cargar el código al PIC16F877A.
+Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofrecido por Microship Technology footnote:[Microchip Technology. (s.f.). "MPLAB® Xpress Cloud-Based IDE". https://www.microchip.com/en-us/tools-resources/develop/mplab-xpress]  , siendo una herramienta que aporta flexibilidad, permitiendo programar, depurar y cargar el código al PIC16F877A.
 
 .Figure 3: Logo de MPLAB
 image::https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.avif[alt="MPLAB", width=200]
 _Fuente: Microchip Technology_
 
 == 4. Ejemplos de Aplicación
-Los ejemplos a demostrar en este informe son obtenidos del libro footnote:[Carlos Ruiz Camarreño, 2021. "Programación de microcontroladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/] de Carlos Ruiz Zamarreño
+Los ejemplos a demostrar en este informe son obtenidos del libro footnote:[Ruiz, C. (2021). "Programación de microcontroladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/] de Carlos Ruiz Zamarreño.
 
 === 4.1. Control de un LED por pulsador
 Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontroladores) con el nombre *LED PULSADOR*, luego en la ventasna Project Resources se asigna los terminales RA0 y RA5 como salida y entrada digital respectivamente, tal como muestra la figura 4.
@@ -96,7 +96,7 @@ int main(void)
 }
 ----
 
-.Codigo en assembly para una funcionalidad similar, según Agkopian footnote:[Manolis Agkopian, 2016. "pic-assembly-examples". https://github.com/magkopian/pic-assembly-examples/blob/master/led%20blink%20with%20TMR0%20and%20TMR1/TMR0_DELAY.asm]:		    
+.Codigo en assembly para una funcionalidad similar, según Agkopian footnote:[Agkopian, M. (2016). "pic-assembly-examples". https://github.com/magkopian/pic-assembly-examples/blob/master/led%20blink%20with%20TMR0%20and%20TMR1/TMR0_DELAY.asm]:		    
 [source,assembly]
 ----
 
