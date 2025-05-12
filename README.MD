@@ -1,4 +1,6 @@
-# Breve Historia del PIC16F18855
+#PIC16F18855
+
+## Historia
 Acá va la historia breve del PIV
 
 ---
