@@ -85,7 +85,16 @@ Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontro
 
 ![MPLAB](img/MCC_PINS.png)
 
-*Fuente: Microchip Technology*
+*Fuente: MPLAB Xpress*
+
+Luego se asignan nombres a cada uno de los terminales para poder ser referenciados posteriormente en el programa, siendo *PULSADOR* para RA5 y *LED0* para RA0, tal como se ve en la figura 4:
+
+**Figura 4: Cambio de nombre terminales**
+
+![MPLAB](img/cambio_nombre.png)
+
+*Fuente: MPLAB Xpress*
+
 
 ### 4.2. **Sensor de Temperatura con Display LCD**
 Ejemplo del LED
