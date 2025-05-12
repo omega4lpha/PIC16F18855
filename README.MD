@@ -136,6 +136,8 @@ Acomodando las conexiones de acuerdo a esta configuración, no sería necesario 
 ![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
 ![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
 
+![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
+
 *Fuente: MPLAB Xpress*
 
 En esta configuración, se conecta el evento TMR2=PRD a la salida biestable, con su salida CLC1 negada a la entrada *D*, por último se deconectan el resto de salidas CLC1_OUT. Esto da como resultado la funcionalidad anterior, con un margen de 50ms entre pulsación para evitar errores o falsos positivos al querer activar o desactivar el LED.
