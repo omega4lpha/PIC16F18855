@@ -6,7 +6,13 @@ El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Techno
 
 **Figura 1: Diagrama del microcontrolador 44 pins PIC16F877A**
 
-![PIC16F18855](img/44pin.png)
+![PIC16F18855](img/44pin.jpg)
+
+*Fuente: Microchip Technology*
+
+**Figura 2: Diagrama del microcontrolador 40 pins PIC16F877A**
+
+![PIC16F18855](img/40pin.jpg)
 
 *Fuente: Microchip Technology*
 
@@ -64,7 +70,7 @@ Gracias a sus periféricos independientes del núcleo (CIP), puede ejecutar tare
 
 Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofrecido por Microship Technology[^2], siendo una herramienta que aporta flexibilidad, permitiendo programar, depurar y cargar el código al PIC16F877A.
 
-**Figura 2: Logo de MPLAB**
+**Figura 3: Logo de MPLAB**
 
 ![MPLAB](img/mplab.avif)
 
@@ -80,25 +86,25 @@ Este entorno es gratuito y se trabaja en la nube, facilitando su uso en distinta
 Los ejemplos a demostrar en este informe son obtenidos del libro "Programación de microcontoladores PIC paso a paso"[^3] de Carlos Ruiz Zamarreño
 
 ### 4.1. **Control de un LED por pulsador**
-Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontroladores) con el nombre *LED PULSADOR*, luego en la ventasna Project Resources se asigna los terminales RA0 y RA5 como salida y entrada digital respectivamente, tal como muestra la figura 3.
+Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontroladores) con el nombre *LED PULSADOR*, luego en la ventasna Project Resources se asigna los terminales RA0 y RA5 como salida y entrada digital respectivamente, tal como muestra la figura 4.
 
-**Figura 3: Asignación de terminales**
+**Figura 4: Asignación de terminales**
 
 ![MPLAB](img/MCC_PINS.png)
 
 *Fuente: MPLAB Xpress*
 
-Luego se asignan nombres a cada uno de los terminales para poder ser referenciados posteriormente en el programa, siendo *PULSADOR* para RA5 y *LED0* para RA0, tal como se ve en la figura 4:
+Luego se asignan nombres a cada uno de los terminales para poder ser referenciados posteriormente en el programa, siendo *PULSADOR* para RA5 y *LED0* para RA0, tal como se ve en la figura 5:
 
-**Figura 4: Cambio de nombre terminales**
+**Figura 5: Cambio de nombre terminales**
 
 ![Cambio_nombre_terminales](img/rename.png)
 
 *Fuente: MPLAB Xpress*
 
-En la figura 5 se muestra que se debe configurar el reloj interno en 1MHZ para psoteriormente generar el archivo main.c.
+En la figura 6 se muestra que se debe configurar el reloj interno en 1MHZ para psoteriormente generar el archivo main.c.
 
-**Figura 5: Ajuste de reloj interno**
+**Figura 6: Ajuste de reloj interno**
 
 ![clock_control](img/control.png)
 
@@ -125,9 +131,9 @@ int main(void)
 ```
 
 De acuerdo con el autor, se podrían detectar errores de que se deba de pulsar más de una vez para cambiar el estado del LED y esto se debería a la velocidad de ejecución del programa, se propone como idea poner unos delays de 20ms entre cada pulzación, sin embargo, el autor indica que hay formas más eficientes de resolver esto, sin perder ciclos de ejcución en la espera. Para esta solución se usan los modulos integrados en el microcontrolado (timers 2, 4 y 6) que realizan la función de forma autónoma.
-Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F877A propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 6.
+Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F877A propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 7.
 
-**Figura 6: Ajuste CLC**
+**Figura 7: Ajuste CLC**
 
 ![clc](img/clc.png)
 
