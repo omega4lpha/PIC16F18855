@@ -5,7 +5,7 @@ El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Techno
 
 
 **Figura 1: Diagrama del microcontrolador 44 pins PIC16F877A**
-
+![PIC16F877A Pinout](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/40pin.jpg)
 ![PIC16F18855](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/refs/heads/main/img/40pin.jpg)
 
 *Fuente: Microchip Technology*
