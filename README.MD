@@ -134,9 +134,6 @@ Acomodando las conexiones de acuerdo a esta configuración, no sería necesario 
 **Figura 7: Ajuste CLC**
 
 ![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
-![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
-
-![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
 
 *Fuente: MPLAB Xpress*
 
