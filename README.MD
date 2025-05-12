@@ -71,7 +71,7 @@ Para poder programar al PIC16F877A se utiliza el **IDE MPLAB ® Xpress IDE** ofr
 
 **Figura 3: Logo de MPLAB**
 
-![MPLAB](img/mplab.avif)
+![MPLAB](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/mplab.avif)
 
 *Fuente: Microchip Technology*
 
@@ -89,7 +89,7 @@ Dentro de MCC se crea el nombre del proyecto (menú File -> media de microcontro
 
 **Figura 4: Asignación de terminales**
 
-![MPLAB](img/MCC_PINS.png)
+![MPLAB](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/MCC_PINS.png)
 
 *Fuente: MPLAB Xpress*
 
@@ -97,7 +97,7 @@ Luego se asignan nombres a cada uno de los terminales para poder ser referenciad
 
 **Figura 5: Cambio de nombre terminales**
 
-![Cambio_nombre_terminales](img/rename.png)
+![Cambio_nombre_terminales](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/rename.png)
 
 *Fuente: MPLAB Xpress*
 
@@ -105,7 +105,7 @@ En la figura 6 se muestra que se debe configurar el reloj interno en 1MHZ para p
 
 **Figura 6: Ajuste de reloj interno**
 
-![clock_control](img/control.png)
+![clock_control](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/control.png)
 
 *Fuente: MPLAB Xpress*
 
@@ -134,7 +134,7 @@ Acomodando las conexiones de acuerdo a esta configuración, no sería necesario 
 
 **Figura 7: Ajuste CLC**
 
-![clc](img/clc.png)
+![clc](https://raw.githubusercontent.com/omega4lpha/PIC16F877A/main/img/clc.png)
 
 *Fuente: MPLAB Xpress*
 
