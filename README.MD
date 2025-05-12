@@ -95,6 +95,14 @@ Luego se asignan nombres a cada uno de los terminales para poder ser referenciad
 
 *Fuente: MPLAB Xpress*
 
+En la figura 5 se muestra que se debe configurar el reloj interno en 1MHZ para psoteriormente generar el archivo main.c.
+
+**Figura 5: Ajuste de reloj interno**
+
+![MPLAB](img/clock_control.png)
+
+*Fuente: MPLAB Xpress*
+
 
 ### 4.2. **Sensor de Temperatura con Display LCD**
 Ejemplo del LED
