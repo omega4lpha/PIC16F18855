@@ -66,7 +66,7 @@ Para poder programar al PIC16F18855 se utiliza el **IDE MLAB ® Xpress IDE** ofr
 
 **Figura 2: Logo de MPLAB**
 
-![MPLAB](https://www.microchip.com/en-us/tools-resources/develop/mplab-xpress/_jcr_content/root/responsivegrid/isolatedimage_819960047/image.coreimg.png/1684419856448/mplab-xpress-ide-transparent-background.png)
+![MPLAB](img/mplab-xpress-ide-transparent-background.avif)
 
 *Fuente: Microchip Technology*
 
