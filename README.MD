@@ -123,9 +123,10 @@ int main(void)
 
 ```
 
+De acuerdo con el autor, se podrían detectar errores de que se deba de pulsar más de una vez para cambiar el estado del LED y esto se debería a la velocidad de ejecución del programa, se propone como idea poner unos delays de 20ms entre cada pulzación, sin embargo, el autor indica que hay formas más eficientes de resolver esto, sin perder ciclos de ejcución en la espera. Para esta solución se usan los modulos integrados en el microcontrolado (timers 2, 4 y 6) que realizan la función de forma autónoma.
+Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F18855 propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 6
 
-### 4.2. **Sensor de Temperatura con Display LCD**
-Ejemplo del LED
+
 
 ---
 
