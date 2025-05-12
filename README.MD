@@ -96,4 +96,4 @@ El microcontrolador PIC16F18855 representa una excelente opción para desarrolla
 
 [^1]: Microchip Technology, s.f. "PIC16F18855". https://www.microchip.com/en-us/product/pic16f18855#Overview
 [^2]: Microchip Technology, s.f. "MPLAB® Xpress Cloud-Based IDE". https://www.microchip.com/en-us/tools-resources/develop/mplab-xpress
-[^2]: Carlos Ruiz Camarreño, 2021. "Programación de microcontoladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/
+[^3]: Carlos Ruiz Camarreño, 2021. "Programación de microcontoladores PIC paso a paso". https://feriachilenadellibro.cl/producto/9786075387413-programacion-de-microcontroladores-pic-paso-a-paso/
