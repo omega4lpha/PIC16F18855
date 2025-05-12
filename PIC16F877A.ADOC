@@ -2,6 +2,8 @@
 
 == 1. Historia
 El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado a finales de los años 90 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas, de acuerdo con su datasheet, cuenta con un procesador RISC de 20MHZ de velocidad de la CPU y 200ns de tiempos de ejecución de instrucción.
+
+===Algunas características
 * Cuenta con 3 temporizadores (Timer0, Timer1 y Timer2), que permiten gestionar eventos y medir el paso del tiempo.
 * Modulo capture permite capturar el temporizador ante algún evento con una resolución de 12,5ns.
 * Modulo compare permite comparar 2 valores de un máximo de 16bit con una resolución de 200ns.
