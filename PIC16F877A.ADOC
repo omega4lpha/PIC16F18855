@@ -1,7 +1,15 @@
 = PIC16F877A
 
 == 1. Historia
-El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado en el 2010 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas gracias a funciones como Core Independent Peripherals (CIP), convertidores analógico-digitales (ADC) de alta resolución y comunicación serial avanzada (I2C, SPI, UART). Es compatible con el entorno de desarrollo MPLAB X y el compilador XC8, lo que facilita su programación y depuración en aplicaciones industriales y educativas.
+El PIC16F877A es un microcontrolador de 8 bits desarrollado por Microchip Technology, lanzado a finales de los años 90 como parte de la familia PIC16. Tiene un bajo consumo de energía y alta capacidad para aplicaciones embebidas, de acuerdo con su datasheet, cuenta con un procesador RISC de 20MHZ de velocidad de la CPU y 200ns de tiempos de ejecución de instrucción.
+* Cuenta con 3 temporizadores (Timer0, Timer1 y Timer2), que permiten gestionar eventos y medir el paso del tiempo.
+* Modulo capture permite capturar el temporizador ante algún evento con una resolución de 12,5ns.
+* Modulo compare permite comparar 2 valores de un máximo de 16bit con una resolución de 200ns.
+* PWM es la modulación del ancho de pulso, el cuál se encarga de enviar una señal de salida de ciclo variable de máximo 10bt.
+* SSP
+** SSI
+** I2C
+
 
 === Definiciones
 * RISC CPU: procesadores que están diseñados para ejecutar un número reducido de tipos de instrucciones que les permite operar a una velocidad más elevada (Solé, R. 2021) footnote:[Solé, R. (2021). "RISC: La arquitectura de procesadores usada por ARM para cambiar el mercado". https://www.profesionalreview.com/2021/07/17/que-es-risc/#Que_es_RISC].
