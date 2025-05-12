@@ -124,15 +124,22 @@ int main(void)
 ```
 
 De acuerdo con el autor, se podrían detectar errores de que se deba de pulsar más de una vez para cambiar el estado del LED y esto se debería a la velocidad de ejecución del programa, se propone como idea poner unos delays de 20ms entre cada pulzación, sin embargo, el autor indica que hay formas más eficientes de resolver esto, sin perder ciclos de ejcución en la espera. Para esta solución se usan los modulos integrados en el microcontrolado (timers 2, 4 y 6) que realizan la función de forma autónoma.
-Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F18855 propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 6
+Acomodando las conexiones de acuerdo a esta configuración, no sería necesario programar el PIC16F18855 propiamente tal, sino que modificar como interactuan las compuertas entre sí, dentro del MCC, tal y como se presenta en la figura 6.
 
+**Figura 6: Ajuste CLC**
+
+![clc](img/clc.png)
+
+*Fuente: MPLAB Xpress*
+
+En esta configuración, se conecta el evento TMR2=PRD a la salida biestable, con su salida CLC1 negada a la entrada *D*, por último se deconectan el resto de salidas CLC1_OUT. Esto da como resultado la funcionalidad anterior, con un margen de 50ms entre pulsación para evitar errores o falsos positivos al querer activar o desactivar el LED.
 
 
 ---
 
 ## Conclusión
 
-El microcontrolador PIC16F18855 representa una excelente opción para desarrolladores que buscan una solución eficiente, económica y versátil para sistemas embebidos. Su conjunto de periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Con capacidades como ADC de alta resolución, múltiples interfaces de comunicación y periféricos independientes del núcleo, el PIC16F18855 permite diseñar dispositivos confiables, compactos y eficientes sin requerir hardware externo complejo. Es un claro ejemplo de cómo la integración y simplicidad pueden potenciar la innovación en proyectos electrónicos modernos.
+El microcontrolador PIC16F18855 es una excelente opción para desarrolladores en busqueda de soluciones económicas y versátiles para sistemas embebidos. Sus periféricos integrados, bajo consumo de energía y facilidad de programación lo hacen ideal tanto para aplicaciones industriales como educativas. Como fue visto en el ejmplo tomado de la literatura, existen distintas vías para la obtención de los mismos resultados.
 
 ---
 
