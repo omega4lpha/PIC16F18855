@@ -91,7 +91,7 @@ Luego se asignan nombres a cada uno de los terminales para poder ser referenciad
 
 **Figura 4: Cambio de nombre terminales**
 
-![Cambio_nombre_terminales](img/cambio_nombre.png)
+![Cambio_nombre_terminales](img/rename.png)
 
 *Fuente: MPLAB Xpress*
 
