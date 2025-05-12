@@ -1,11 +1,29 @@
 # PIC16F18855
 
-## Historia
+## 1. Historia
 Acá va la historia breve del PIV
 
 ---
 
-## Diferencias entre un Microcontrolador y un Microprocesador
+
+### 1.1 Carácteristicas
+
+A continuación, de describen las características básicas del microcontrolador PIC16F18855
+
+| Característica                  | Valor     |
+|-------------------------------|-----------|
+| Program Memory Size (KB)       | 14        |
+| RAM                            | 1024      |
+| Data EEPROM (bytes)            | 256       |
+| Pin Count                      | 28        |
+| Operation Voltage Max. (V)     | 5.5       |
+| Operation Voltage Min. (V)     | 1.8       |
+
+
+### 1.2 Diferencias entre un Microcontrolador y un Microprocesador
+
+A diferencia de los microprocesadores, el PIC16F18855 (el cual es un microcontrolador ) no consta de un sistema operativo para su funcionamiento. En lugar de eso, está diseñado para ejecutar directamente código embebido escrito en lenguajes como C o ensamblador, sin necesidad de capas intermedias de software. Esto lo hace ideal para aplicaciones específicas donde se requiere una respuesta rápida, bajo consumo de energía y alta integración de periféricos en un solo dispositivo.
+Su capacidad de procesamiento es menor, pensado precisamente para tareas de menor complejidad, analizando sus entradas y salidas (I/O) en base a sus componentes internos y cambios de voltaje.
 
 | Característica               | Microcontrolador (ej: PIC16F18855)     | Microprocesador                        |
 |-----------------------------|----------------------------------------|----------------------------------------|
